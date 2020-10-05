@@ -1,0 +1,27 @@
+body{
+    background-color: #05FAF9;
+}
+.pageHeader{
+    color: #AD4102;
+    text-align: center;
+    margin: 20px auto 30px;
+    font-size: 40px;
+}
+
+.infoSection{
+    margin-bottom: 3px;
+    padding: 30px;
+}
+
+.infoSection h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FF711F;
+}
+
+.infoSection p{
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #FA5F05;
+}
