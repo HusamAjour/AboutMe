@@ -1,11 +1,13 @@
 body{
-    background-color: #05FAF9;
+    background-color: #8BC34A;
 }
 .pageHeader{
     color: #AD4102;
     text-align: center;
     margin: 20px auto 30px;
     font-size: 40px;
+    border-bottom: 2px solid #AD4102;
+    padding-bottom: 20px;
 }
 
 .infoSection{
@@ -17,11 +19,11 @@ body{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
-    color: #FF711F;
+    color: #3F51B5;
 }
 
 .infoSection p{
     margin-bottom: 10px;
     font-size: 25px;
-    color: #FA5F05;
+    color: #F44336;
 }
