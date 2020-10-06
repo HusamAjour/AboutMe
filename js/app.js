@@ -99,10 +99,10 @@ var favoriteFootballers = ['kaka', 'kroos', 'ronaldo', 'lampard', 'zidane', 'cri
 var footballerGuessBolean = false;
 alert('Ok ' + name + '. Another game to play. Try to guess 1 of my favorite 7 footballers of all times. You have 6 guesses. Let\'s start!');
 
-for(var i = 0; i < 7; i++){
-  var footballerGuess = prompt('Guess No.' + i + 1).toLocaleLowerCase();
-  for(var j=0; j < favoriteFootballers.length; j++){
-    if(footballerGuess === favoriteFootballers[j]){
+for(var j = 0; j < 7; j++){
+  var footballerGuess = prompt('Guess No.' + (j + 1)).toLocaleLowerCase();
+  for(var k=0; k < favoriteFootballers.length; k++){
+    if(footballerGuess === favoriteFootballers[k]){
       alert('Correct! ' + footballerGuess + ' is one of my favorite footballers.');
       footballerGuessBolean = true;
       resultConter++;
@@ -117,6 +117,7 @@ for(var i = 0; i < 7; i++){
     alert('Wrong answer. Try again.');
   }
 }
+
 if(footballerGuessBolean === true)
 {
   alert('Congratulatins! You guessed one of my favorite footballer correctly. Here is a list of my favortie 7 footballers. ' + favoriteFootballers);
