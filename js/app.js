@@ -1,9 +1,42 @@
 'use strict';
 
 var resultConter = 0;
+
 var name = prompt('Hi there stranger. What is your name?');
+
 alert('Welcome ' + name + '. Let\'s play a guessing game! I\'m going to ask you questions about my self and you need to guess the answers. Let\'s start :) !');
 
+// Questions from 1 to 5 body
+var questionsArray = ['Do you think I\'m a morning person?', 'Do you think I\'m a coffee addict?', 'Do you think I\'ve ever been on an airplane?', 'Do you think I have a driving license?', 'Do you think I play tennis?'];
+
+var correctAnswers = ['no', 'yes', 'no', 'no', 'no'];
+var wrongAnswers = ['yes', 'no', 'yes', 'yes', 'yes'];
+
+
+function yesNoQuestion(num,question){
+  return prompt('Question ' + num + ': ' + question).toLowerCase();
+}
+
+
+
+
+for(var i=0; i<5; i++){
+  var ans = yesNoQuestion((i+1), questionsArray[i]);
+  if(ans === correctAnswers[i] || ans === correctAnswers[i].charAt(0) || ans === wrongAnswers[i] || ans === wrongAnswers[i].charAt(0)){
+    if(ans === correctAnswers[i] || ans === correctAnswers[i].charAt(0)){
+      alert('That is correct! :)');
+      resultConter++;
+    }else{
+      alert('That is wrong :(');
+    }
+
+  }else{
+    alert('Wrong input.');
+  }
+}
+
+
+/*
 // Question 1
 function question1() {
   var morningPerson = prompt('Do you think I\'m a morning person?');
@@ -88,6 +121,10 @@ function question5() {
   }
 }
 question5();
+
+*/
+
+
 // Question 6
 
 function question6() {
@@ -95,7 +132,7 @@ function question6() {
   alert('Ok ' + name + ', let\'s play another game! This game is called Guess The number. You have 4 tries to guess the number. Let\'s start!');
   var guessGameScore = false;
   for (var i = 0; i < 4; i++) {
-    var guessTry = parseInt(prompt('Guess No.' + i + 1));
+    var guessTry = parseInt(prompt('Guess No.' + (i + 1)));
     if (guessTry === numberToGuess) {
       alert('Correct guess. Congratulations!');
       resultConter++;
