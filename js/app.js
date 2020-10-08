@@ -36,95 +36,6 @@ for(var i=0; i<5; i++){
 }
 
 
-/*
-// Question 1
-function question1() {
-  var morningPerson = prompt('Do you think I\'m a morning person?');
-  if (morningPerson.toLowerCase() === 'yes' || morningPerson.toLowerCase() === 'y') {
-    console.log('That is wrong. I\'m not a morning person.');
-    alert('That is wrong. I\'m not a morning person.');
-  } else if (morningPerson.toLowerCase() === 'no' || morningPerson.toLowerCase() === 'n') {
-    console.log('That is correct. I\'m not a morning person.');
-    alert('That is correct. I\'m not a morning person.');
-    resultConter++;
-  } else {
-    console.log('Wrong input.');
-    alert('Wrong input.');
-  }
-}
-question1();
-// Question 2
-
-function question2() {
-  var coffee = prompt('Do you think I\'m a coffee addict?');
-  if (coffee.toLowerCase() === 'yes' || coffee.toLowerCase() === 'y') {
-    console.log('That is correct. I\'m a coffee addict.');
-    alert('That is correct. I\'m a coffee addict.');
-    resultConter++;
-  } else if (coffee.toLowerCase() === 'no' || coffee.toLowerCase() === 'n') {
-    console.log('That is correct. I\'m a coffee addict');
-    alert('That is correct. I\'m a coffee addict');
-  } else {
-    console.log('Wrong input.');
-    alert('Wrong input.');
-  }
-}
-question2();
-// Question 3
-
-function question3() {
-  var airplane = prompt('Do you think I\'ve ever been on an airplane?');
-  if (airplane.toLowerCase() === 'yes' || airplane.toLowerCase() === 'y') {
-    console.log('That is wrong. I\'ve never been on an airplane.');
-    alert('That is wrong. I\'ve never been on an airplane.');
-  } else if (airplane.toLowerCase() === 'no' || airplane.toLowerCase() === 'n') {
-    console.log('That is correct. I\'ve never been on an airplane.');
-    resultConter++;
-    alert('That is correct. I\'ve never been on an airplane.');
-  } else {
-    console.log('Wrong input.');
-    alert('Wrong input.');
-  }
-}
-question3();
-// Question 4
-
-function question4() {
-  var license = prompt('Do you think I have a driving license?');
-  if (license.toLowerCase() === 'yes' || license.toLowerCase() === 'y') {
-    console.log('That is wrong. I don\'t a driving license');
-    alert('That is wrong. I don\'t a driving license');
-  } else if (license.toLowerCase() === 'no' || license.toLowerCase() === 'n') {
-    console.log('That is correct. I don\'t a driving license');
-    resultConter++;
-    alert('That is correct. I don\'t a driving license');
-  } else {
-    console.log('Wrong input.');
-    alert('Wrong input.');
-  }
-}
-question4();
-// Question 5
-
-function question5() {
-  var tennis = prompt('Do you think I play tennis?');
-  if (tennis.toLowerCase() === 'yes' || tennis.toLowerCase() === 'y') {
-    console.log('That is wrong. I don\'t a play tennis.');
-    alert('That is wrong. I don\'t a play tennis.');
-  } else if (tennis.toLowerCase() === 'no' || tennis.toLowerCase() === 'n') {
-    console.log('That is correct. I don\'t a play tennis.');
-    alert('That is correct. I don\'t a play tennis.');
-    resultConter++;
-  } else {
-    console.log('Wrong input.');
-    alert('Wrong input.');
-  }
-}
-question5();
-
-*/
-
-
 // Question 6
 
 function question6() {
@@ -154,6 +65,9 @@ function question6() {
   }
 }
 question6();
+
+
+
 // Question 7
 function question7() {
   var favoriteFootballers = ['kaka', 'kroos', 'ronaldo', 'lampard', 'zidane', 'cristiano', 'ronaldinho'];
@@ -186,5 +100,7 @@ function question7() {
   }
 }
 question7();
+
+
 // Result
 alert('Your result is: ' + resultConter + ' out of 7');
